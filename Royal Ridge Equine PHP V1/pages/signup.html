@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+        <title>Royal Ridge Equine - Sign Up!</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="../css/normalize.css" type="text/css">
+        <link rel="stylesheet" href="../css/main.css" type="text/css">
+        <link rel="stylesheet" href="../css/signup.css" type="text/css">
+        <link href="../css/print.css" rel="stylesheet" media="print">
+
+              
+          <!--[if lt IE9]>
+            <script src="../js/html5shiv.min.js" type="text/javascript"></script>
+          <![endif]-->
+        
+         <!-- back to top toggle script -->
+         <script src="../js/backtotop.js"></script>
+         
+         <script src="http://code.jquery.com/jquery-3.3.1.min.js">   </script>
+
+         <!-- Mobile menu Jquery -->
+         <script src="../js/jquery.mobilemenu.js"></script>
+         <script>
+                $(function() {
+                   $("nav > ul").mobileMenu(); 
+                });
+         </script>
+         <!-- Tab JS -->
+                <script>
+                    function openEvent(evt, eventName) {
+                      var i, tabcontent, tablinks;
+                      tabcontent = document.getElementsByClassName("tabcontent");
+                      for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                      }
+                      tablinks = document.getElementsByClassName("tablinks");
+                      for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                      }
+                      document.getElementById(eventName).style.display = "block";
+                      evt.currentTarget.className += " active";
+                    }
+
+                    // Get the element with id="defaultOpen" and click on it
+                   document.getElementById("defaultOpen").click();
+            </script>
+    </head>
+    <body id="signup">
+          <header>
+               <img id="logo" src="../images/logo2.png" alt="logo">
+          </header>      
+                            
+      <div class="lightGrnBar"></div> 
+       
+      <!-- NAVIGATION MENU START -->      
+       <nav>
+          <ul>
+              <li><a href="../index.html" >Home</a></li>
+              <li><a href="about.html">About</a>
+                  <ul>
+                      <li>
+                          <a href="gallery.html">Photo Gallery</a>
+                      </li>
+                      <li>
+                          <a href="trainers.html">Our Trainers</a>
+                      </li>
+                      
+                  </ul>
+              </li>      
+              <li><a href="services.html">Services</a>
+                  <ul>
+                      <li>
+                          <a href="boarding.html">Boarding</a></li>
+                      
+                      <li>
+                          <a href="lessons.html">Lessons</a>
+                      </li>     
+                      <li>
+                          <a href="events.html">Events</a>
+                      </li>
+                  </ul>
+              </li>
+              <li><a href="reservations.html">Reservations</a>
+                  <ul>
+                      <li>
+                            <a href="signup.html"  class="actPage">Sign-Up</a>
+                      </li>
+                  </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+       </nav>
+       <!-- NAVIGATION MENU END -->  
+    
+       <div id="wrapper">
+                 
+            <main>
+          <div id="wrapper">
+            <article id="intro">
+                <h2>Sign up to start having a great time!</h2>
+                 <p>Has your child been bugging you about summer camp?<p>
+                 <p>Are you a teacher looking for a fun and informative field trip for your class?<p>
+                 <p>Are new newly engaged looking for a place for a wedding?<p>
+                 <p>We have the perfect solution for you! Make a reservation below and we can help you with anything you might need.</p>
+            </article>
+             
+             
+              <!-- Tab links -->
+                <div class="tab">
+                  <button class="tablinks" onclick="openEvent(event, 'summercamp')" id='defaultOpen'>Summer Camp</button>
+                  <button class="tablinks" onclick="openEvent(event, 'fieldtrips')">Field Trips</button>
+                  <button class="tablinks" onclick="openEvent(event, 'privateparties')">Private Parties</button>
+                </div>
+
+                <!-- Tab content -->
+               <div id="summercamp" class="tabcontent">
+                  <h3>Sign up for Summer Camp!</h3>
+                <article>
+                <form action="scripts/contactus.php" method="post" target="_blank">
+                   <fieldset>
+                               <p><em>Note: Fields highlighted in red are required.</em></p>
+                            <div class="parentinfo">
+                               <h3>Parent Information</h3>
+                                <p>First Name:</p><input type="text" name="name" required>
+                                <p>Last Name:</p> <input type="text" name="lastname" align="center" required><br>
+                                <p>Phone Number:</p><input type="tel" name="phonenumber" maxlength="20" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Ex: 555-555-5555" required><br>
+                                <p>Email:</p><input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required title="Please enter valid email."><br>
+                            </div>
+                        <hr>
+                            <div class="riderinfo">
+                                    <h3>Rider Information</h3>
+                                <p>First Name:</p><input type="text" name="firstname"  required>
+                                <p>Last Name:</p><input type="text" name="lastname" align="center" required>
+                                <p>Height:</p><input type="text" name="height" align="center" required>
+                                <p>Do you have any experience with the following<br>
+                                <em>(Select all that apply)</em></p>
+                                <label for="postingtrot"><input type="checkbox" name="experience"> Posting Trot</label><br>
+                                <label for="postingtrotcanter"><input type="checkbox" name="experience"> Canter</label><br>
+                                <label for="trotcanterleads"><input type="checkbox" name="experience"> Leads</label><br>
+                                <label for="jumping"><input type="checkbox" name="experience"> Jumping</label><br>
+                                <label for="noneoftheabove"><input type="checkbox" name="experience"> None of the Above</label>
+                            </div>
+                               
+                                <p>Which dates are you interested in reserving?</p>
+                            <div class="interests">
+                                <select name="interests" style="height:75px;" multiple>
+                                    <option value="first">First Week - July 8-12</option>
+                                    <option value="second">Second Week - July 22-26</option>
+                                    <option value="third">Third Week - August 5-9</option>
+                                    <option value="fourth">Fourth Week - AUgust 19-23</option>
+                                </select>
+                            </div>
+                                <p>Would you like private lessons?</p>
+                            <div class="privatelessons">
+                                <input type="radio" name="privatelessons" value="yes"> Yes<br>
+                                <input type="radio" name="privatelessons" value="no"> No<br>
+                            </div>
+                               
+                                <p>How did you hear about us?</p>
+                            <div class="hearabout">
+                                 <select name="hearabout">
+                                    <option value="googlesearch">Google Search</option>
+                                    <option value="referral">Referral</option>
+                                    <option value="driveby">Drive BY</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                               
+                                <p>Questions/Comments?</p>
+                            <div class="questions">
+                            <textarea name="questions" col="50" rows="4"></textarea>
+                            </div>
+                        
+                             <div class="submit">
+                             <button type="submit" id="submit">Sign Me up!</button>
+                             </div>
+                         
+                       </fieldset>
+                    </form>
+                  </article>
+                </div>
+
+                <div id="fieldtrips" class="tabcontent">
+                     <h3>Sign up for a Field Trip!</h3>
+                  <article>
+                    <form action="scripts/contactus.php" method="post" target="_blank">
+                       <fieldset>
+                               <p><em>Note: Fields highlighted in red are required.</em></p>
+                            <div class="parentinfo">
+                                <h3>Teacher Information</h3>
+                                <p>First Name:</p><input type="text" name="name" required>
+                                <p>Last Name:</p> <input type="text" name="lastname" align="center" required><br>
+                                <p>Phone Number:</p><input type="tel" name="phonenumber" maxlength="20" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Ex: 555-555-5555" required><br>
+                                <p>Email:</p><input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required title="Please enter valid email."><br>
+                            </div>
+
+                                <p>How many children are in your class?</p>
+                            <div class="children">
+                                 <select name="children">
+                                    <option value="1-10">1-10</option>
+                                    <option value="11-20">11-20</option>
+                                    <option value="21-30">21-30</option>
+                                    <option value="31+">31+</option>
+                                </select>
+                            </div>
+
+                                <p>Please select a date that works best for you.</p>
+                            <div class="date">
+                                <input type="radio" name="date" value="firstmonday"> First Monday of the Month<br>
+                                <input type="radio" name="date" value="firstfriday"> First Friday of the Month<br>
+                                <input type="radio" name="date" value="lastmonday"> Last Monday of the Month<br>
+                                <input type="radio" name="date" value="lastfriday"> Last Friday of the Month<br>
+                            </div>
+
+                                <p>Would you like private tour? Or would you be open to being with other classes?</p>
+                            <div class="privatetour">
+                                <input type="radio" name="privatetour" value="yes"> Yes, I would like a private tour for my class.<br>
+                                <input type="radio" name="privatetour" value="no"> No, I would be open to being with another class.<br>
+                            </div>
+
+                                <p>Questions/Comments?</p>
+                            <div class="questions">
+                                <textarea name="questions" col="100" rows="4"></textarea>
+                            </div>
+                            
+                            <div class="submit">
+                                 <button type="submit" id="submit">Sign Me Up!</button>
+                            </div>
+                            
+                            </fieldset>
+                            </form>
+                      </article>
+                </div>
+
+                <div id="privateparties" class="tabcontent">
+                    <h3>Private Parties</h3>
+                      <article>
+                            <form action="scripts/contactus.php" method="post" target="_blank">
+                           <fieldset>
+                           <p><em>Note: Fields highlighted in red are required.</em></p>
+                            <div class="parentinfo">
+                                <p>First Name:</p><input type="text" name="name" required>
+                                <p>Last Name:</p> <input type="text" name="lastname" align="center" required><br>
+                                <p>Phone Number:</p><input type="tel" name="phonenumber" maxlength="20" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Ex: 555-555-5555" required><br>
+                                <p>Email:</p><input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  required title="Please enter valid email."><br>
+                            </div>
+                                <p>Please describe what type of private party you would like to throw and what dates you are available.</p>
+                            <div class="party">
+                                <textarea name="questions" col="100" rows="4"></textarea>
+                            </div>
+                            <div class="submit">
+                                 <button type="submit" id="submit">Submit</button>
+                            </div>
+                           </fieldset>
+                            </form>
+                      </article>
+                </div> 
+             
+             <a id="bttBtn" href="#signup"><img src="../images/back-to-top-arrow.png" alt="back to top arrow"></a>  
+             
+            <div class="lightGrnBar clearIt">&nbsp;</div> 
+          </div>
+           
+       </main>
+           <footer>
+              <ul>
+                 <li><a class="instagram" href="https://www.instagram.com" title="Instagram" target="_blank"></a></li>
+                 <li><a class="facebook" href="https://www.facebook.com" title="Facebook" target="_blank"></a></li>
+                 <li><a class="twitter" href="https://www.twitter.com" title="Twitter" target="_blank" ></a></li>
+                 <li><a class="yelp" href="https://www.yelp.com" title="yelp" target="_blank"></a></li>
+                 <li><a class="googleMaps" href="https://maps.google.com" title="google maps" target="_blank"></a></li>
+              </ul>
+              <address>
+                  <p>858-449-4311 | 15069 Sycamore Canyon Rd | Poway, CA | 92064</p>      
+              </address>
+              <p>Copyright &copy; 2019  Royal Ridge Equestrian Center</p>
+           </footer>
+     </div> <!-- end wraper 960 width --> 
+    
+</body>
+</html>

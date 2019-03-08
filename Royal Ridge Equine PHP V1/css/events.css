@@ -1,0 +1,27 @@
+#eventaccordion {
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+}
+h3 {
+    background-color: #4F703B;
+    width: 300px;
+    color: white;
+    border: solid 1px #fff; 
+    border-radius: 20px;
+    margin:auto;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    font-weight: 100;
+    text-align: center;
+}
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+
+main {
+    margin: 15px;
+}

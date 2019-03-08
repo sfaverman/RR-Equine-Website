@@ -1,0 +1,6 @@
+<DIV class="ng-scope" ng-include="iconImageSrc"><svg xmlns="http://www.w3.org/2000/svg" class="arrow-img" style="width: 32px; height: 39px;" ng-style="{ 'height': sizes.iconH, 'width': sizes.iconW }">
+  <svg viewBox="0 0 38.1 47.3">
+    <line fill="none" stroke-miterlimit="10" stroke-width="2" x1="0" y1="1.9" x2="38.1" y2="1.9" />
+    <polygon fill="none" stroke-miterlimit="10" stroke-width="2" points="36.1,24.3 26.9,24.3 26.9,46.3 11.1,46.3 11.1,24.3 2,24.3 19,2.7" />
+  </svg>
+</svg></DIV>

@@ -1,0 +1,89 @@
+#about aside {
+    margin-right: 2%;
+   /* float: left;*/
+    width: 30%;
+    height: auto;
+}
+
+#about1 .lightGrnBar {
+    height: 3px;
+}
+
+article#ab1 {
+    margin-right: 0%;
+}
+.cardContainer{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.fourCards {
+	flex-basis: 20%;
+    border-radius: 10px;
+    background-color: #6E8A4D;
+	/*margin: 1%;*/
+	padding: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	position: relative;
+    margin-bottom: 2%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.fourCards:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.fourCards img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.fourCards h3, .fourCards p {
+    color: #fff;
+    text-align: center;
+	margin-top: 10px;
+}
+.fourCards p {
+	margin-bottom: 20%;
+}
+button {
+	min-width: 100px;
+}
+.fourCards button {
+	position: absolute;
+	justify-content: center;
+	width: 60%;
+	margin:auto;
+	bottom: 4%;
+	left: 20%;
+	padding: 0;
+	/*padding: 1px 5px;*/
+}
+@media screen and (max-width: 700px) {
+	.fourCards {
+		flex-basis: 42%;
+		margin-bottom: 20px;
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (max-width: 550px){
+	#about section p:nth-of-type(n+4) {
+	   display: none;
+	}
+    #about2 h2 {
+      font-size: 1.1em;
+      text-transform:lowercase; 
+    }
+    #about2 h2::first-letter {
+        text-transform: uppercase;
+    }  
+    
+   	.fourCards {
+		flex-basis: 75%;
+		padding: 3%;
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+}

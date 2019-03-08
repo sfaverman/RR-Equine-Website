@@ -1,0 +1,433 @@
+body {
+    margin: 10px 10px 0 10px;
+    font-family: 'Quicksand', sans-serif;
+    color: #4F703B;
+    box-sizing: border-box;
+    line-height: 1.5em;
+    font-size: 1em;
+    background-color: lightgrey;
+}
+header {
+    background: url('../images/Header2.png') no-repeat center/100% 100%;
+}
+#wrapper {
+    max-width: 960px;
+    margin: auto;
+    background-color: #fff;
+    padding-top: 1%;
+    }
+
+img {
+    width: 100%;
+    height: auto;
+}
+img#logo {
+    width: 20%;
+    min-width: 100px;
+    height: auto;
+    margin: 2% 0 0 5%;
+}
+img#serenity {
+    width: 50%;
+    margin:auto;
+    padding: 5%;
+    display: flex;
+}
+
+.lightGrnBar {
+    background-color: #9FBD70;
+    height: 8px;
+}
+
+h2 { 
+    font-size: 1.3em;
+    text-align: center;    
+}
+
+
+/* Navigation menu starts */
+nav {
+    background-color: #4F703B;
+    color: #fff;
+}
+nav ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding: 1.5em;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+    min-width: 100px; 
+}
+
+nav a:hover {
+    background-color: #9FBD70;
+    min-width: 100px;
+}
+.actPage {
+    background-color: 
+        #6E8A4D;
+}
+
+/* dropdown navigation */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color:#6E8A4D; 
+}
+
+nav ul li:hover ul {
+    display: block;
+    z-index: 5;
+    margin-left: 1.5em;
+    margin-top: 0.3em;
+    padding: 0;
+}
+
+nav ul ul li {
+    display: block;
+    padding: 0;
+}
+
+nav ul li ul a {
+    display: block;
+}
+
+nav ul li ul a.actPage {
+    background-color: #4F703B;
+}
+
+nav li li:not(:last-child) {
+     border-bottom: solid 1px #ccc;
+}
+/* jquery mobile nav */
+
+.mnav {
+    background-color: #9FBD70;
+    color: #fff;
+}
+.mnav:hover{
+    background-color: #4F703B;
+}
+
+/* Navigation menu ends */
+
+/* carusel bxslider jquery pluggin */
+.bx-wrapper {
+    width: 711px!important;
+    margin: 0px auto 30px;
+}
+
+article#carusel {
+    text-align: center;
+}
+/* end carusel */
+
+section {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+section > article {
+    width: 68%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+    height: auto;
+    float: left;
+}
+section aside {
+    width: 30%;
+    height: auto;
+    float: left;
+}
+aside {
+    background-color: #6E8A4D;
+    margin-bottom: 15px;
+    margin-right: 0;
+}
+aside img {
+    width: 100%;
+    height: auto; 
+}
+aside h2, aside p {
+    color: #fff;
+    text-align: center;
+}
+aside p {
+    padding: 0 10px;
+}
+button {
+    display: block;
+    background-color: #fff;
+    color: #4F703B;
+    border: solid 1px #fff;
+    border-radius: 25px;
+    margin: 15px auto;
+    font-size: 1em;
+    font-weight:500;
+    min-width: 150px;
+    
+}
+
+button a {
+    display: block;
+    text-decoration: none;
+    color: #4F703B;
+}
+
+aside button {
+    width: 50%;
+}
+/* Code for Youtube Responsive video */
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top:25px;
+    height:0;
+    overflow: hidden;
+}
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.actPage {
+    background-color: 
+        #6E8A4D;
+}
+.clearIt {
+    clear: both;
+}
+/* Trainers page */
+/*article.trainer img {*/
+article.trainerImageName {
+    width: 30%;
+    height: auto;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 10px;
+}
+
+#tabs {
+    width: 66%;
+    float: left;
+    margin-bottom: 10px;
+}
+#tabs > ul li {
+    font-weight: bold;
+    font-size: 1em; /*1.2em; */
+}
+
+#tabs li {
+    background-color: #9FBD70;
+    width: 48%;
+    border: solid 0.9px #4F703B;
+    border-radius: 8px 8px 0 0;
+    padding: 0;
+}
+#tabs-1, #tabs-2 {
+    padding-left: 1%;
+    padding-bottom: 0;
+}
+#tabs-1 li, #tabs-2 li {
+    background-color: #fff;
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    list-style-type: square;
+}
+
+.cardBtn {
+    display: inline-block;
+    background-color: #9FBD70;
+    color: #4F703B;
+    border: solid 1px #4F703B; 
+    border-radius: 20px;
+    padding: 5px 0;
+}
+
+.trainer .lightGrnBar {
+    height: 3px;
+    margin-bottom: 10px; 
+    }
+/* End Trainers page */
+
+/* lessons */
+.more-info-extra p {
+	margin: 20px;
+}
+/* end lessons */
+/* back to top button */
+#bttBtn img {
+	width: 5%;
+	position: fixed;
+	bottom: 5px;
+	right: 15px;
+}
+
+footer {
+   background: url('../images/Footer_image.png') no-repeat center/100% 100%;
+   min-height: 120px;   
+   padding: 2.5em;
+   text-align: center;
+   color: #fff;
+   font-size: 0.8em;
+   display: flex;
+   flex-direction: column;
+   justify-content:flex-end;
+}
+
+/* socia media */
+footer ul {
+    margin: 10px auto 0 auto;
+	margin-top: 10px;
+}
+
+footer ul li  {
+    list-style: none;
+	display:inline-block;
+	}
+
+footer li a.instagram,
+footer li a.facebook,
+footer li a.twitter,
+footer li a.yelp,
+footer li a.googleMaps
+			{
+    background:url(../images/Social_Media_Icons.png) no-repeat;
+    display:block;
+    height: 27px;
+    width: 27px;
+    margin: 8px;           
+}      
+
+footer li a.instagram      {background-position: 0 -27px;} 
+footer li a.facebook       {background-position: -31px -27px;} 
+footer li a.twitter        {background-position: -62px -27px;}
+footer li a.yelp           {background-position: -93px -27px;} 
+footer li a.googleMaps     {background-position: -124px -27px;}
+
+footer li a.instagram:hover {
+                          background-position: 0 0;} 
+footer li a.facebook:hover {
+                          background-position: -31px 0;} 
+footer li a.twitter:hover {
+                          background-position: -62px 0;}
+footer li a.yelp:hover    {
+                          background-position: -93px 0;}
+footer li a.googleMaps:hover {
+                          background-position: -124px 0;}
+footer address {
+    color: #000;
+    font-size: 1.2em;
+}
+
+/*@media screen and (max-width: 767px) {
+	
+  	 #tabs > ul li , #tabs-1, #tabs-2, #tabs-3 {
+        width: 100%
+		font-size: 1em;
+    } */   
+    	
+@media screen and (max-width: 650px) {
+    body {
+    line-height: 1.3em;
+    font-size: 0.9em;    
+    }
+    /* home page, ... */
+    section article, section aside {
+       float: none;
+       width: 100%;
+    }
+    
+      
+    #hmAside img {
+        width: 25%;
+        margin-right: 2%;
+        float: left;
+        padding-bottom: 0%;
+    }
+    aside {
+        padding: 1% 0 2% 0;;
+    }
+    aside h2 {
+        font-size: 1.2em;
+        margin: 4px 0;
+    }
+    aside p {
+        text-align: left;
+    }
+    aside botton {
+        margin-top: 2%;
+    }
+    #trAside img:nth-of-type(2) {
+        display: none;
+	}
+	
+    #tabs > ul li {
+        width: 100%;
+		font-size: 1em;
+    }    
+    	
+    footer {
+        min-height: 50px;
+        padding: 0;
+        margin: 0;
+    }
+    footer address {
+        font-size: 1em;
+    }
+    
+    /* about page */
+    #about section aside {
+        display: none;
+    }
+       
+  
+@media screen and (max-width: 550px) {
+    body {
+    line-height: 1.2em;
+    font-size: 1em; /* 0.8em; */     
+    }
+    
+    #tabs, #tabs li, #tabs li a {
+        width: 100%;
+    }
+    article.trainerImageName {
+        width: 80%;
+        margin: 0 10%;
+    }
+    article.trainerImageName h3 {
+        margin: 0;
+        text-align: center;
+    }
+	
+}
+   
+    
+ @media screen and (max-width: 479px) {   
+    section {
+    font-size: 1em; /* 9px; */    
+    margin-left: 2%;
+    margin-right: 2%;
+    }
+     
+    #bttBtn img {
+	width: 10%; 
+    }
+}
+
+
+
+

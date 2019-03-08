@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>Royal Ridge Equine - Home</title>
+       
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link href="css/print.css" rel="stylesheet" media="print">
+    
+    
+     <!-- JS --------------------------------------------- -->
+     
+      <!--[if lt IE9]>
+            <script src="js/html5shiv.min.js" type="text/javascript"></script>
+      <![endif]-->
+      
+     <!-- back to top toggle script -->
+     <script src="../js/backtotop.js"></script>
+     
+     <script src="http://code.jquery.com/jquery-3.3.1.min.js">   </script>
+        
+     <!-- Carusel --> 
+     <script src="js/jquery.bxslider.min.js" type="text/javascript"></script>
+     <script>
+            $(function(){
+              $('.bxslider').bxSlider({
+                    auto: true,
+                    captions: true,
+              });  
+            }); // end doc ready
+     </script>
+     
+     <!-- Mobile menu Jquery -->
+     <script src="js/jquery.mobilemenu.js"></script>
+     <script>
+            $(function() {
+               $("nav > ul").mobileMenu(); 
+            });
+     </script>
+</head>
+<body id="home">
+      <header>
+           <img id="logo" src="images/logo2.png" alt="logo">
+      </header>      
+                
+      <div class="lightGrnBar"></div> 
+       
+      <!-- NAVIGATION MENU START -->      
+       <nav>
+          <ul>
+              <li><a href="index.html" class="actPage">Home</a></li>
+              <li><a href="pages/about.html">About</a>
+                  <ul>
+                      <li>
+                          <a href="pages/gallery.html">Photo Gallery</a>
+                      </li>
+                      <li>
+                          <a href="pages/trainers.html">Our Trainers</a>
+                      </li>
+                      
+                  </ul>
+              </li>      
+              <li><a href="pages/services.html">Services</a>
+                  <ul>
+                      <li>
+                          <a href="pages/boarding.html">Boarding</a></li>
+                      
+                      <li>
+                          <a href="pages/lessons.html">Lessons</a>
+                      </li>     
+                      <li>
+                          <a href="pages/events.html">Events</a>
+                      </li>
+                  </ul>
+              </li>
+              <li><a href="pages/reservations.html">Reservations</a>
+                  <ul>
+                      <li>
+                            <a href="pages/signup.html">Sign-Up</a>
+                      </li>
+                  </ul>
+              </li>
+              <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+       </nav>
+       <!-- NAVIGATION MENU END -->  
+    
+       <div id="wrapper">
+           <main>
+              <article id="carusel">
+                  <ul class="bxslider">
+                           <li><img src="images/Carousel_Image1.png" alt="kids horse riding" title="Happy Riders"></li>
+                           <li><img src="images/Carousel_Image2.png" alt="rodeo horse riding" title="Western, English, Jumping"></li>
+                           <li><img src="images/Carousel_Image3.jpg" alt="seven horse chain" title="We are the Best"></li>
+                   </ul>
+              </article>
+              <section>
+                  <article>
+                      <h2>Welcome to Royal Ridge Equestrian Center</h2>
+                      <p>
+                          At Royal Ridge and Serenity Equestrian Centers, we always envisioned building a horse facility that provides all the amenities desired by every horse person.
+                          We are Commited to keeping horses and riders happy.
+                          The manager, owner and head trainer, Emily Richards, strives to meet every need of the horse and rider.
+                      </p>
+                      <h3>Bridleless Riding....</h3>
+                      <div class="video">
+                          <iframe width="640" height="360" src="https://www.youtube.com/embed/F9cZwuQ7xbw" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+                  </article>      
+                    <aside id="hmAside">
+                      <h2>MEET OUR NEW TRAINER</h2>
+                      <img src="images/Trainer2.png" alt="Johnna new trainer">
+                     
+                          <p>Our new trainer, Kristen Wynn, has tons of experience with horses &amp; children. She can't wait to meet with you! Click bellow to schedule a session with her.   
+                          </p>
+                         <button><a href="pages/trainers.html">Start Riding</a></button>                         <!-- <a class="button" href="pages/trainers.html">Start Riding</a>  -->                     
+                                                  
+                      </aside>
+                
+              </section>
+              
+              <a id="bttBtn" href="#home"><img src="../images/back-to-top-arrow.png" alt="back to top arrow"></a>
+                   
+               
+              <div class="lightGrnBar clearIt">&nbsp;</div> 
+           </main>
+            
+           <footer>
+              <ul>
+                 <li><a class="instagram" href="https://www.instagram.com" title="Instagram" target="_blank"></a></li>
+                 <li><a class="facebook" href="https://www.facebook.com" title="Facebook" target="_blank"></a></li>
+                 <li><a class="twitter" href="https://www.twitter.com" title="Twitter" target="_blank" ></a></li>
+                 <li><a class="yelp" href="https://www.yelp.com" title="yelp" target="_blank"></a></li>
+                 <li><a class="googleMaps" href="https://maps.google.com" title="google maps" target="_blank"></a></li>
+              </ul>
+              <address>
+                  <p>858-449-4311 | 15069 Sycamore Canyon Rd | Poway, CA | 92064</p>      
+              </address>
+              <p>Copyright &copy; 2019  Royal Ridge Equestrian Center</p>
+           </footer>
+     </div> <!-- end wraper 960 width --> 
+    
+</body>
+</html>

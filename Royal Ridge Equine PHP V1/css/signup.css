@@ -1,0 +1,81 @@
+
+h3:first-of-type {
+    margin: 10px;
+}
+
+#intro p {
+	margin: 10px;
+	text-indent: 1em;
+}
+button#submit {
+    display: block;
+    background-color: #4F703B;
+    color: #fff;
+    border: solid 1px #fff; 
+    border-radius: 20px;
+    margin: 10px auto;
+}
+fieldset {
+    width: 75%;
+    padding: 10px;
+    margin: auto;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 75%;
+}
+input[type=radio] {
+    width:auto;
+}
+textarea {
+    height: 8em;
+}
+
+ /* Style the tab */
+.tab {
+    overflow: hidden;
+	margin-left: 10px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: #4F703B;
+    color: #fff;
+	float: left;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    margin: 5px 2px 10px 10px;
+}
+/* Change background color of buttons on hover
+.tab button:hover {
+    background-color: #4F703B;
+    color: white;
+}
+ */
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #6E8A4D;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+} 
+
+@media screen and (max-width: 550px) {
+	.tab button {
+		float: none;
+		text-align: center;
+		margin: 5px auto;
+		padding: 4px;
+	}
+	fieldset {
+    width: 90%;
+    }
+
+}
